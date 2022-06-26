@@ -18,7 +18,7 @@ DocJect.toHTML({
 ```
 
 ```js
-DocJect.toJSON("<p style="color:red">Hello, World!</p>");
+DocJect.toJSON(`<p style="color:red">Hello, World!</p>`;
 
 /*
 {
