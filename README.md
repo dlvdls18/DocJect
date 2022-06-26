@@ -1,4 +1,7 @@
 # DocJect
+
+![DocJect](docject.png)
+
 Convert HTML String to JSON or JSON to HTML String without setup and configuration.
 
 ```js
@@ -68,7 +71,7 @@ Keys of `Object` are:
   - Is required - `Yes`
   - Type - `Boolean`
   - For - `True: <test></test>, False: <test>`
-  - Example - `{ hasInner: true } -> <test></test>
+  - Example - `{ hasInner: true } -> <test></test>`
 - Content
   - Key name - `content`
   - Is required - `No`
