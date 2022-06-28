@@ -1,4 +1,4 @@
-// https://github.com/DocJect
+// https://github.com/dlvdls18/DocJect
 var DocJect = {
   toHTML(json) {
     var h = "";
