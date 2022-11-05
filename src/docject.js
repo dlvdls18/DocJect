@@ -2,16 +2,13 @@
 // tag, content, hasInner, attr
 var DocJect = {
   toJSON(arg) {
-    var targets = [];
-    if(arg instanceof HTMLElement) targets.push(arg);
-    
+    var target = null;
+    if(arg instanceof HTMLElement) target = arg;
     else {
       var local = document.createElement("div");
       local.innerHTML = arg;
-      targets = [...local.childNodes].filter(function(target) {
-        return target instanceof HTMLElement;
-      });
+      target = local.childNodes[0];
     }
-    return targets.length == 1 ? targets[0] : targets;
+    
   }
 }
