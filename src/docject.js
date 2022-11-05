@@ -14,6 +14,10 @@ var DocJect = {
       content: null,
       attr: null
     }
+    // attributes
+    
+    // content
+    
     return instance;
   }
 }
