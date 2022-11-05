@@ -1,5 +1,4 @@
 // https://github.com/dlvdls18/DocJect
-// tag, content, hasInner, attr
 var DocJect = {
   toJSON(arg) {
     var target = null;
@@ -12,6 +11,8 @@ var DocJect = {
     var instance = {
       tag: target.localName,
       hasInner: target.innerHTML != "",
+      content: null,
+      attr: null
     }
   }
 }
