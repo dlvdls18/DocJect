@@ -7,11 +7,10 @@ var DocJect = {
       content: null,
       attr: null
     }
-    console.log(target);
     // attributes
     for(var i = 0; i < target.attributes.length; i++) {
       var attr = target.attributes.item(attr);
-      console.log(attr);
+      instance.attr[attr.localName] = attr.value;
     }
     // content
     
