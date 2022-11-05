@@ -6,7 +6,7 @@ var DocJect = {
     else {
       var local = document.createElement("div");
       local.append(arg);
-      console.log(local.innerHTML);
+
       target = [...local.childNodes].filter(function(node) {
         return node instanceof HTMLElement;
       })[0];
