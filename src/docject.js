@@ -15,7 +15,11 @@ var DocJect = {
       attr: null
     }
     // attributes
-    for(var i = 0; i < target.
+    for(var i = 0; i < target.attributes.length; i++) {
+      var attr = target.attributes.item(attr);
+      
+      
+    }
     // content
     
     return instance;
