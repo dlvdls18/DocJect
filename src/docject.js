@@ -15,7 +15,7 @@ var DocJect = {
       attr: null
     }
     // attributes
-    
+    for(var i = 0; i < target.
     // content
     
     return instance;
