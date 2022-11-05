@@ -18,7 +18,6 @@ var DocJect = {
     for(var i = 0; i < target.attributes.length; i++) {
       var attr = target.attributes.item(attr);
       
-      
     }
     // content
     
