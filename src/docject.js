@@ -37,6 +37,6 @@ var DocJect = {
       } else jr.hasInner = false;
       j.push(jr);
     });
-    return j.length == 0 ? j[0] : j;
+    return j.length == 1 ? j[0] : j;
   }
 }
