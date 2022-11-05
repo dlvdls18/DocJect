@@ -9,6 +9,9 @@ var DocJect = {
       local.innerHTML = arg;
       target = local.childNodes[0];
     }
-    
+    var instance = {
+      tag: target.localName,
+      hasInner: target.innerHTML != "",
+    }
   }
 }
