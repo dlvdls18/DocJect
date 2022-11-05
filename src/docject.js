@@ -9,6 +9,6 @@ var DocJect = {
       local.innerHTML = arg;
       targets = [...local.childNodes];
     }
-    return targets;
+    return targets.length == 1 ? targets[0] : targets;
   }
 }
