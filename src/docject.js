@@ -6,7 +6,9 @@ var DocJect = {
     else {
       var local = document.createElement("div");
       local.innerHTML = arg;
-      target = local.childNodes[0];
+      target = [...local.childNodes].filter(function(node) {
+        return node instanceof HTMLElement;
+      })[0];
     }
     var instance = {
       tag: target.localName,
@@ -14,6 +16,7 @@ var DocJect = {
       content: null,
       attr: null
     }
+    console.log(target);
     // attributes
     for(var i = 0; i < target.attributes.length; i++) {
       var attr = target.attributes.item(attr);
