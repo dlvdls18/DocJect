@@ -6,6 +6,9 @@ var DocJect = {
     if(arg instanceof HTMLElement) targets.push(arg);
     else {
       var local = document.createElement("div");
+      local.innerHTML = arg;
+      targets = [...local.childNodes];
     }
+    return targets
   }
 }
