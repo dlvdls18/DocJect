@@ -7,7 +7,9 @@ var DocJect = {
     else {
       var local = document.createElement("div");
       local.innerHTML = arg;
-      targets = [...local.childNodes];
+      targets = [...local.childNodes].filter(function(target) {
+        return target instanceof HTMLElement;
+      });
     }
     return targets.length == 1 ? targets[0] : targets;
   }
