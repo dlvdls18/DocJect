@@ -5,7 +5,7 @@ var DocJect = {
       tag: target.localName,
       hasInner: target.innerHTML != "",
       content: null,
-      attr: null
+      attr: {}
     }
     // attributes
     for(var i = 0; i < target.attributes.length; i++) {
