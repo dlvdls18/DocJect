@@ -58,7 +58,7 @@ attr = {
 ```
 
 ### Content
-Content array value can be `Object` and `String`
+Content array values can be `Object` and `String`.
 ```
 content = [
   "Hello",
