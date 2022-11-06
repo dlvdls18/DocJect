@@ -2,28 +2,13 @@
 
 ![DocJect](docject.png)
 
-Convert HTML Element and JSON
+Convert HTML Element and Object
 
 ```js
-DocJect.toHTML({
-  tag: "p",
-  hasInner: true,
-  content: ["Hello, World!"],
-  attr: {
-    style: "color:red"
-  }
-});
-
-// <p style="color:red">Hello, World!</p>
-```
-
-```js
-DocJect.toJSON(document.createElement("input"));
-
+DocJect.object(document.createElement("input"));
 /*
 {
   tag: "input",
-  hasInner: false,
   content: [],
   attr: {}
 }
@@ -36,11 +21,23 @@ DocJect.toJSON(document.createElement("input"));
 ```
 
 # Documentation
-Use the variable (object) `DocJect` which contains the 2 main function.
+
+## Methods
 
 ```js
-DocJect.toJSON(/* HTMLElement */); // returns object
-DocJect.toHTML(/* Object */); // returns HTMLElement
+/*
+ * Converts HTMLElement to Object
+ * DocJect.object(HTMLElement);
+ * Returns Object
+ */
+DocJect.object();
+
+/*
+ * Converts Object to HTMLElement
+ * DocJect.element(Object);
+ * Returns HTMLElement
+ */
+DocJect.element();
 ```
 
 
@@ -49,6 +46,27 @@ DocJect.toHTML(/* Object */); // returns HTMLElement
 | Name  | Value  |       Description      |
 |:-----:|:------:|:----------------------:|
 | `tag` | String | Tag name of the element |
-| `hasInner` | Boolean | If the element has inner |
 | `content` | Array | Content of the element |
 | `attr` | Object | Attributes of the element |
+
+### Key pair attributes
+```js
+attr = {
+  color: "red"
+}
+// <... color="red"></...>
+```
+
+### Content
+Content array value can be `Object` and `String`
+```
+content = [
+  "Hello",
+  {
+    tag: "b",
+    content: ["World"],
+    attr: {}
+  }
+];
+// <...>Hello<b>World</b></...>
+```
