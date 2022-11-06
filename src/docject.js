@@ -1,4 +1,4 @@
-// https://github.com/dlvdls18/DocJect
+// https://github.com/dlvdls18/DocJect (v1.1)
 var DocJect = {
   object(target) {
     var instance = {
